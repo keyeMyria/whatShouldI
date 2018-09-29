@@ -1,0 +1,6 @@
+framework module Localide {
+  umbrella header "Localide-umbrella.h"
+
+  export *
+  module * { export * }
+}
