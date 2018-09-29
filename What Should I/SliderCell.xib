@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="SliderCell" customModule="What_Should_I" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="31" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-de-kud">
+                        <rect key="frame" x="22" y="46.5" width="325" height="43.5"/>
+                    </slider>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Radius:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e7x-BT-vV4">
+                        <rect key="frame" x="24" y="19" width="108.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7O7-Ta-TKK">
+                        <rect key="frame" x="297.5" y="19" width="47.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7O7-Ta-TKK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="CW4-xo-o1T"/>
+                    <constraint firstItem="3dN-de-kud" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="DdF-EK-dgh"/>
+                    <constraint firstItem="3dN-de-kud" firstAttribute="top" secondItem="e7x-BT-vV4" secondAttribute="bottom" constant="8" id="Ew0-At-c0e"/>
+                    <constraint firstItem="e7x-BT-vV4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="d31-Sw-jq8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7O7-Ta-TKK" secondAttribute="trailing" constant="8" id="hhr-re-Dy7"/>
+                    <constraint firstItem="e7x-BT-vV4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="qEw-No-9pm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3dN-de-kud" secondAttribute="trailing" constant="8" id="s9P-iD-vQ8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3dN-de-kud" secondAttribute="bottom" constant="8" id="uzZ-00-1Ao"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="distanceLabel" destination="7O7-Ta-TKK" id="2r0-1e-lDS"/>
+                <outlet property="distanceSlider" destination="3dN-de-kud" id="aFO-iS-odC"/>
+                <outlet property="searchLabel" destination="e7x-BT-vV4" id="4pD-4Y-hfz"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="84"/>
+        </tableViewCell>
+    </objects>
+</document>
